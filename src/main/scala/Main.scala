@@ -4,10 +4,10 @@ import interface._
   println(msg)
   val mazdaApp: Client = new Client(new Mazda())
   val chevroletApp: Client = new Client(new Chevrolet())
-  println(mazdaApp.addAutomobile())
-  println(mazdaApp.addVan())
-  println(chevroletApp.addAutomobile())
-  println(chevroletApp.addVan())
+  println(mazdaApp.addAutomobile().head.bodywork)
+  println(mazdaApp.addVan().head.fuelType)
+  println(chevroletApp.addAutomobile().head.bodywork)
+  println(chevroletApp.addVan().head.fuelType)
   
 
 def msg = "Abstract Factory"
