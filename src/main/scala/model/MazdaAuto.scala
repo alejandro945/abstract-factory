@@ -1,11 +1,13 @@
 package model
 
-class MazdaAuto(m:Int, d:Int, b:String) extends Automovil {
-    def model = m
-    def amountOfDoors = d
-    def brand = b
-    def run = {
-        print("Mazda Nitro")
-    }
+import java.util.Date
+
+class MazdaAuto extends Automobile {
+    def model = new Date().getYear()
+    def cylinderCapacity = 2000
+    def bodywork = "Grand Touring"
+
+    def run = print("Mazda Nitro")
+    def isDualAutomaticAir = true
 }
 

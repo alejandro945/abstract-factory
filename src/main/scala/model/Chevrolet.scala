@@ -1,9 +1,9 @@
 package model
-
+import contract._
 class Chevrolet extends AbstractFactory{
 
-    def createAutomovil: Automovil = return new ChevroletAuto(2010,4,"Pro")
+    def createAutomobile(): Automobile = return new ChevroletAuto()
 
-    def createVan: Van = return  new ChevroletVan()
+    def createVan(): Van = return  new ChevroletVan()
 
 }

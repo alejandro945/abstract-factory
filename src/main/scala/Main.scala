@@ -1,5 +1,13 @@
+import model._
+import interface._
 @main def hello: Unit = 
-  println("Hello world!")
   println(msg)
+  val mazdaApp: Client = new Client(new Mazda())
+  val chevroletApp: Client = new Client(new Chevrolet())
+  println(mazdaApp.addAutomobile())
+  println(mazdaApp.addVan())
+  println(chevroletApp.addAutomobile())
+  println(chevroletApp.addVan())
+  
 
-def msg = "I was compiled by Scala 3. :)"
+def msg = "Abstract Factory"

@@ -1,10 +1,11 @@
 package model
+import contract._
 
 class Mazda extends  AbstractFactory {
 
-    def createAutomovil: Automovil = return new MazdaAuto(2010,4,"Premium")
+    def createAutomobile(): Automobile = return new MazdaAuto()
 
-    def createVan: Van = return new MazdaVan()
+    def createVan(): Van = return new MazdaVan()
 
     
 }
